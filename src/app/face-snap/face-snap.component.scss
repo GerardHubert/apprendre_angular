@@ -1,0 +1,36 @@
+.snap-card {
+  width: 500px;
+  height: 160px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 10px #95a5a6, -5px -5px 10px #95a5a6;
+  h2 {
+    text-align: center;
+  }
+  img,
+  .date,
+  .description,
+  .location {
+    width: 95%;
+  }
+  .snap-button {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.snaped {
+  background-color: rgba(lightgreen, 0.4);
+  color: darkgreen;
+  button {
+    box-shadow: lightgreen 3px 3px 7px;
+    color: darkgreen;
+    &:active {
+      box-shadow: lightgreen 0 0 5px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="snap-card" [ngClass]="{ snaped: isSnaped === true }">
+  <!-- <h2>{{ faceSnap.title | uppercase }}</h2>
+  <p class="date">
+    Ajouté le {{ faceSnap.createdDate | date : "dd MMMM yyyy à HH:mm" }}
+  </p>
+  <img [src]="faceSnap.imageUrl" [alt]="title" />
+  <p class="description">{{ faceSnap.description }}</p>
+  <p class="location" *ngIf="faceSnap.location">
+    Localisation: {{ faceSnap.location }}
+  </p>
+  <p class="no-location" *ngIf="!faceSnap.location">
+    L'auteur n'a pas indiqué la localisation de la photo :(
+  </p>
+  <p class="snap-button">
+    <button (click)="onAddSnap()">{{ buttonText }}</button>
+    <span
+      [ngStyle]="faceSnap.snaps > 10 ? { color: 'red' } : { color: 'orange' }"
+      >{{ faceSnap.snaps }}</span
+    >
+  </p> -->
+  <h2>{{ faceSnap.title }}</h2>
+  <p>{{ faceSnap.description }}</p>
+  <button (click)="onViewFaceSnap()">Voir le FaceSnap</button>
+</div>
